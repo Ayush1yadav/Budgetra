@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgetra - Your Personal Finance Companion</title>
+    <link rel="icon" type="image/svg+xml" href="Assets/logo.svg">
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="landing-body">
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fas fa-wallet" style="color: var(--primary-color)"></i>
+            Budgetra
+        </div>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="dashboard.html" class="nav-cta-button">Go to Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Main Hero Section -->
+    <div class="landing-container">
+        <main class="hero">
+            <div class="hero-content">
+                <div class="badge-pill fade-in-up">🌟 The #1 Personal Finance Tool</div>
+                <h1 class="fade-in-up" style="animation-delay: 0.1s;">
+                    Take Control of Your <br />
+                    <span class="highlight-gradient">Indian Rupees (₹)</span>
+                </h1>
+                <p class="fade-in-up" style="animation-delay: 0.2s;">
+                    Track every single Rupee effortlessly. Set monthly budgets, visualize your spending habits, and
+                    achieve true financial freedom—all from a sleek, localized dashboard.
+                </p>
+                <div class="hero-buttons fade-in-up" style="animation-delay: 0.3s;">
+                    <a href="dashboard.html" class="cta-button primary-btn">
+                        Start Tracking for Free <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#features" class="cta-button secondary-btn">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Background Abstract Shapes Layer -->
+        <div class="hero-image-placeholder">
+            <div class="abstract-shape shape-1"></div>
+            <div class="abstract-shape shape-2"></div>
+            <div class="abstract-shape shape-3"></div>
+        </div>
+    </div>
+
+    <!-- App Preview Image Section -->
+    <section class="preview-section fade-in-up" style="animation-delay: 0.5s;">
+        <div class="mockup-window">
+            <div class="mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="mockup-body mockup-dashboard">
+                <!-- Mockup Grid imitating the dashboard -->
+                <div class="mockup-row top-row">
+                    <div class="mockup-card"><i class="fas fa-coins text-primary"></i> Budget: ₹25,000</div>
+                    <div class="mockup-card"><i class="fas fa-chart-line text-danger"></i> Expenses: ₹14,200</div>
+                    <div class="mockup-card"><i class="fas fa-piggy-bank text-success"></i> Remaining: ₹10,800</div>
+                </div>
+                <div class="mockup-row main-row">
+                    <div class="mockup-chart-box">
+                        <div class="mockup-pie"></div>
+                    </div>
+                    <div class="mockup-list-box">
+                        <div class="mockup-item"><span class="mock-badge food">Food</span> ₹850</div>
+                        <div class="mockup-item"><span class="mock-badge shopping">Shopping</span> ₹2,400</div>
+                        <div class="mockup-item"><span class="mock-badge bills">Bills</span> ₹1,200</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-title text-center">
+            <h2>Why Choose <span class="highlight">Budgetra?</span></h2>
+            <p>Everything you need to manage your money efficiently.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-rupee-sign"></i></div>
+                <h3>Localized for India</h3>
+                <p>Fully supports Indian Rupee (₹) formatting and localized insights out-of-the-box.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                <h3>Visual Analytics</h3>
+                <p>Understand your expenses with beautifully interactive Pie and Bar charts powered by Chart.js.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Secure Local Storage</h3>
+                <p>No backend servers, no data selling. Your data never leaves your browser's local storage.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h3>Stunning Dark Mode</h3>
+                <p>Work flawlessly day or night with a robust, seamlessly integrated Dark/Light mode engine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="steps-section">
+        <div class="section-title text-center">
+            <h2>How It Works</h2>
+        </div>
+        <div class="steps-container">
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <h3>Set Your Budget</h3>
+                <p>Start by entering your monthly budget target in ₹.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <h3>Log Expenses</h3>
+                <p>Quickly add your daily spending across varied categories.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <h3>Track Real-time</h3>
+                <p>Watch your charts update instantly and keep track of your remaining budget limits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <h2>Ready to take charge of your wallet?</h2>
+        <p>Join the thousands who trust SmartSpend with their personal finances offline.</p>
+        <a href="dashboard.html" class="cta-button primary-btn dark-text">Create Free Dashboard <i
+                class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-wallet"></i> Budgetra
+            </div>
+            <p>Built with HTML, CSS, and JS.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Budgetra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
